@@ -34,7 +34,6 @@ source = ["src"]
 [tool.coverage.report]
 show_missing = true
 fail_under = 100
-source = ["src"]
 
 [tool.coverage.html]
 directory = "coverage/html_report"

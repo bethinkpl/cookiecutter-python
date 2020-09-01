@@ -29,12 +29,12 @@ minversion = "6.0"
 [tool.coverage.run]
 branch = true
 data_file = "coverage/.coverage"
-source = "src"
+source = ["src"]
 
 [tool.coverage.report]
 show_missing = true
 fail_under = 100
-source = "src"
+source = ["src"]
 
 [tool.coverage.html]
 directory = "coverage/html_report"

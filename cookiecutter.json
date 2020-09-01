@@ -3,5 +3,6 @@
   "version": "0.1.0",
   "description": "",
   "python_version": 3.8,
+  "github_org_name": "bethinkpl",
   "_copy_without_render": [".github/*"]
 }

@@ -52,7 +52,7 @@ def pylint(session: Any) -> None:
     Usage:
         `poetry run nox -s pylint [-- path]`
     """
-    args = session.posargs or ["src", "tests"]
+    args = session.posargs or ["src", "tests", "noxfile.py", "cli.py"]
     session.run("poetry", "run", "pylint", *args, external=True)
 
 

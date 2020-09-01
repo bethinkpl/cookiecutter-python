@@ -2,5 +2,6 @@
   "project_name": "",
   "version": "0.1.0",
   "description": "",
-  "python_version": 3.8
+  "python_version": 3.8,
+  "_copy_without_render": [".github/*"]
 }

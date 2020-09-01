@@ -13,7 +13,7 @@ def update_env(session: Any) -> None:
         `poetry run nox -s update_env`
     """
     session.run(
-        "poetry", "update", external=True,
+        "poetry", "update", external=True
     )
 
 
@@ -26,7 +26,12 @@ def pre_commit(session: Any) -> None:
     """
     session.run("poetry", "run", "pre-commit", "install", external=True)
     session.run(
-        "poetry", "run", "pre-commit", "run", "--all-files", external=True,
+        "poetry",
+        "run",
+        "pre-commit",
+        "run",
+        "--all-files",
+        external=True,
     )
 
 

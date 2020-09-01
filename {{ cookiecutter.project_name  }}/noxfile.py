@@ -1,10 +1,12 @@
+from typing import Any
+
 import nox
 
 nox.options.sessions = ["pre_commit", "tests", "pylint", "mypy"]
 
 
 @nox.session(python=False)
-def update_env(session):
+def update_env(session: Any) -> None:
     """Updates environment dependencies.
 
     Usage:
@@ -16,7 +18,7 @@ def update_env(session):
 
 
 @nox.session(python=False)
-def pre_commit(session):
+def pre_commit(session: Any) -> None:
     """Run pre-commit checks.
 
     Usage:
@@ -29,7 +31,7 @@ def pre_commit(session):
 
 
 @nox.session(python=False)
-def tests(session):
+def tests(session: Any) -> None:
     """Test src & output coverage report.
     Report generation configuration in pyproject.toml & pytest.ini files.
 
@@ -41,7 +43,7 @@ def tests(session):
 
 
 @nox.session(python=False)
-def pylint(session):
+def pylint(session: Any) -> None:
     """Run pylint fot linting whole codebase.
 
     Usage:
@@ -52,7 +54,7 @@ def pylint(session):
 
 
 @nox.session(python=False)
-def mypy(session):
+def mypy(session: Any) -> None:
     """Check type hints with mypy.
 
     Usage:

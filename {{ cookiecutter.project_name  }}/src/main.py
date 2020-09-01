@@ -1,3 +1,3 @@
-def main():
+def main() -> None:
     """docstring"""
     pass

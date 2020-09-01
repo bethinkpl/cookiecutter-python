@@ -4,5 +4,6 @@
   "description": "",
   "python_version": 3.8,
   "github_org_name": "bethinkpl",
+  "create_remote": [true, false],
   "_copy_without_render": [".github/*"]
 }

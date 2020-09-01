@@ -12,9 +12,7 @@ def update_env(session: Any) -> None:
     Usage:
         `poetry run nox -s update_env`
     """
-    session.run(
-        "poetry", "update", external=True
-    )
+    session.run("poetry", "update", external=True)
 
 
 @nox.session(python=False)

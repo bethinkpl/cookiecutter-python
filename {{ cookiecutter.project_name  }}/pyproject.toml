@@ -3,6 +3,10 @@ name = "{{ cookiecutter.project_name }}"
 version = "{{ cookiecutter.version }}"
 description = "{{ cookiecutter.description }}"
 authors = []
+readme = "README.md"
+{%- if cookiecutter.create_remote -%}
+repository = "https://github.com/{{ cookiecutter.github_org_name }}/{{ cookiecutter.project_name }}"
+{% endif %}
 packages = [ { include = "src" } ]
 
 [tool.poetry.dependencies]

@@ -1,4 +1,6 @@
 #!/bin/bash
+poetry install
+poetry add -D black pylint mypy pytest pytest coverage[toml] hypothesis[numpy,pandas] nox pre-commit click
 poetry update
 git init
 git add .

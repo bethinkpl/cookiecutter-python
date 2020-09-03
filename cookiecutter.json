@@ -1,5 +1,6 @@
 {
-  "project_name": "",
+  "project_name": "'-'-separated-name",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace('-', '_') }}",
   "version": "0.1.0",
   "description": "TODO",
   "python_version": 3.8,

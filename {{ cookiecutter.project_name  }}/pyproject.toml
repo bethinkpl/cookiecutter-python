@@ -11,7 +11,7 @@ packages = [ { include = "src" } ]
 
 [tool.poetry.dependencies]
 python = "^{{ cookiecutter.python_version }}"
-python-toolbox = { git = "git@github.com:bethinkpl/python-toolbox.git", branch = "master"}
+pythink-toolbox = { git = "git@github.com:bethinkpl/pythink-toolbox.git", branch = "master"}
 
 [tool.poetry.dev-dependencies]
 

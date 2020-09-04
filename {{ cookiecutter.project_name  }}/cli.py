@@ -3,8 +3,11 @@ from typing import Sequence
 
 import click
 
+from {{ cookiecutter.package_name}} import __version__
+
 
 @click.group()
+@click.version_option(version=__version__)
 def main() -> None:
     """\n😎 {{ cookiecutter.project_name }} CLI 😎\n"""
 

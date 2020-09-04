@@ -7,7 +7,6 @@ readme = "README.md"
 {%- if cookiecutter.create_remote == true -%}
 repository = "https://github.com/{{ cookiecutter.github_org_name }}/{{ cookiecutter.project_name }}"
 {% endif %}
-packages = [ { include = "src" } ]
 
 [tool.poetry.dependencies]
 python = "^{{ cookiecutter.python_version }}"
@@ -20,6 +19,9 @@ cli = 'cli:main'
 
 [tool.pytest.ini_options]
 minversion = "6.0"
+
+[tool.coverage.paths]
+source = ["src"]
 
 [tool.coverage.run]
 branch = true
